@@ -29,6 +29,7 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        overflow: hidden;
     }
     .nav-contact{
         display: none;
@@ -121,6 +122,28 @@ body{
     }
     .line-click:last-child{
         display: none;
+    }
+    .top{
+        position: fixed;
+        bottom: -5vh;
+        right: 0.8vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        width: 39px;
+        border-radius: 100%;
+        background-color: var(--color-green);
+        transition: .2s cubic-bezier(1,.01,.01,1);
+    }
+
+    .top-visible{
+        bottom: 0.8vh;
+    }
+
+    .scroll-top{
+        height: 22px;
+        transform: rotate(-90deg);
     }
 
 }
