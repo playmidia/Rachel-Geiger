@@ -25,11 +25,11 @@ body{
 @media screen and (max-width: 720px){   
     body{
         background-image: url(../img/backgroundMobile.jpg);
-        background-size: cover;
-        background-position: center;
+        background-size: 100vw;
+        background-position: top;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .nav-contact{
         display: none;
@@ -125,7 +125,7 @@ body{
     }
     .top{
         position: fixed;
-        bottom: -5vh;
+        bottom: -10vh;
         right: 0.8vh;
         display: flex;
         align-items: center;
