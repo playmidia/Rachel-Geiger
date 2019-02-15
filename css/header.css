@@ -25,9 +25,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.nav-contact{
-    display: none;
-}
 header{
     position: absolute;
     top: 0;
@@ -42,7 +39,7 @@ header{
 }
 .header-static>img{
     margin-left: 1vw;
-    height: 38px;
+    height: 40px;
     z-index: 20;
 }
 nav{
@@ -50,7 +47,7 @@ nav{
     top: calc(-50vh - 60px);
     right: 0;
     z-index: 1;
-    height: 60vh;
+    height: 35vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -66,7 +63,6 @@ nav{
 nav ul{
     height: 100%;
     width: 100%;
-    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -99,7 +95,7 @@ nav a{
 .line{
     width: 30px;
     height: 2px;
-    background-color: var(--color-bege);
+    background-color: white;
     transition: .5s;
 }
 .line:nth-child(2){
@@ -133,6 +129,9 @@ nav a{
 }
 .top-visible{
     bottom: 2vh;
+}
+.top img{
+    margin-bottom: 2px;
 }
 .scroll-top{
     height: 22px;

@@ -5,8 +5,8 @@ let arrowUp = document.querySelector('.top'); //Botão para subir ao topo
 let estatisticas = document.querySelector('.contain-numbers h2'); //Titulo "Nossas estatísticas"
 let containNumbers = document.querySelectorAll('.number'); //Div com os numeros, icones e descrição das medidas
 
-// let containTitle = document.querySelector('.contain-title');
-// let containSobre = document.querySelector('.contain-sobre');
+let containTitle = document.querySelector('.contain-titles');
+let containSobre = document.querySelector('.contain-sobre');
 
 //Função para descer para a segunda sessão
 function scroll() {
@@ -75,7 +75,6 @@ body.onscroll = () => {
     }
     if(scrollY >= 325){
         estatisticas.classList.add('animation-scroll');
-        
     }
     if(scrollY >= 400){
         for(let containNumber of containNumbers){
@@ -84,6 +83,10 @@ body.onscroll = () => {
         setInterval(contador1, 50);
         setInterval(contador2, 100);
         setInterval(contador3, 150); 
+    }
+    if(scrollY >= 1000){
+        containTitle.classList.add('animation-scroll');
+        containSobre.classList.add('animation-scroll');
     }
 }
 

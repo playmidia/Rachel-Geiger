@@ -11,26 +11,14 @@
     <script defer src="js/inicio.js"></script>
 </head>
 <body>
-    <!-- Barra de navegação com contatos, apenas desktop -->
-    <div class="nav-contact">
-        <div class="social-icons">
-            <a href=""><img src="img/facebook.png" alt="facebook"></a> 
-            <a href=""><img src="img/instagram.png" alt="instagram"></a> 
-            <a href=""><img src="img/whatsapp.png" alt="whatsapp"></a> 
-        </div>
-        <div class="contact-information">
-            <p>R. Maestro Cardim, 377 - Bela Vista, São Paulo - SP</p>
-        </div>
-    </div>
     <!-- cabeçalho -->
-    <header class="header-static">
-        <img src="img/Logo.png" alt="Logo">
+    <header id="inicio" class="header-static">
+        <img src="img/logo.png" alt="Logo">
         <nav>
             <ul>
-                <a href=""><li>Inicío</li></a>
-                <a href=""><li>Serviços</li></a>
-                <a href=""><li>Sobre</li></a>
-                <a href=""><li>Contato</li></a>
+                <a href="index.html"><li>Inicío</li></a>
+                <a href="#sobre"><li>Sobre</li></a>
+                <a href="contato.html"><li>Contato</li></a>
             </ul>
         </nav>
         <div class="menu">
@@ -47,7 +35,7 @@
     <section id="section-one" class="section-one" > 
         <div class="contain">
         <h1>Quer ter uma vida mais saudável?</h1>
-            <button class="btn-fale-conosco" >Fale Conosco</button>
+            <a href="contato.html" class="btn-fale-conosco" >Fale Conosco</a>
         </div>
         <!-- Botão para descer para a div de baixo -->
         <div class="scroll-down">
@@ -80,7 +68,7 @@
         </div>
     </section>
     <!-- Terceira Sessão -->
-    <section class="section-tree">
+    <section id="sobre" class="section-tree">
         <div class="contain-titles">
             <h2>Sobre</h2>
             <div class="perfil"></div>        
@@ -95,10 +83,26 @@
             <li>Em processo de validação de certificado do IFM - institute of functional medicine. </li>
             <li>Contínua presença em congressos e cursos de atualização na área de life-style medicine, obesidade, disturbios metabólicos. </li>
             <li>Atuação focada na qualidade de vida do paciente, auxilio no tratamento de doenças crônicas e inflamatórias, emagrecimento, suporte nutricional e metabólico.</li>
-            <a href="">Ver Mais!</a>
+            <a href="curriculo.html">Ver Mais!</a>
         </ul>
     </section>
-   
+    <footer>
+        <div class="nav-social">
+              <a href="https://www.facebook.com/drarachelgeiger"><img src="img/facebook.png" alt="facebook"></a>
+              <a href="https://www.instagram.com/drarachelgeiger/"><img src="img/instagram.png" alt="instagram"></a>
+              <a href="https://api.whatsapp.com/send?phone=551296674100"><img src="img/whatsapp.png" alt="whatsapp"> Agende aqui </a>          
+        </div>
+        <div class="contact">
+            <div>
+                <p>(11) 3266-3962</p>|
+                <p>(11) 3288-8480</p>
+            </div>
+            <a href="mailto:agendamento@drarachelgeiger.com.br">agendamento@drarachelgeiger.com.br</a>
+        </div>
+        <div class="copy">
+            <p>Copyright © 2018 Dra. Rachel Geiger. Desenvolvido por <a href="https://www.playmidiapublicidade.com.br/">Grupo Play Mídia</a></p>
+        </div>
+    </footer>
 
 </body>
 </html>
