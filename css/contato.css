@@ -1,0 +1,136 @@
+:root{
+    --color-salmon: #E48872;
+    --color-green: #83B69B;
+    --color-bege: #FFFED8;
+    --montserrat: "MontSerrat";
+    --ptsans: "PT-Sans";
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+section{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--montserrat);
+    overflow: auto;
+}
+h1{
+    color: var(--color-green);
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.input{
+    width: 75vw;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid var(--color-green);
+    box-shadow: 0 0 10px var(--color-green);
+    margin: 10px 0;
+    text-align: center;
+    font-size: 17px;
+    outline: none;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+}
+.msg{
+    width: 75vw;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid var(--color-green);
+    box-shadow: 0 0 10px var(--color-green);
+    margin: 10px 0;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    outline: none;
+    resize: none;
+    font-family: var(--montserrat);
+    transition: .3s;
+}
+/* .msg:hover{
+    height: 200px;
+} */
+.btn-active{
+    position: relative;
+    margin-top: 15px;
+    width: 40vw;
+    height: 35px;
+    background-color: var(--color-green);
+    box-shadow: 0 0 2px black, 0 0 5px inset white;
+    text-transform: uppercase;
+    border: none;
+    font-size: 18px;
+    box-shadow: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    color: white;
+    transition: .8s;
+    cursor: pointer;
+}
+.btn-disable{
+    background-color: lightgray;
+    box-shadow: none;
+    color: gray;
+}
+.map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 85%;
+    border: 1px solid var(--color-green);
+    box-shadow: 0 0 10px inset var(--color-green);
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 50px;
+    position: relative;
+}
+.map p{
+    width: 95%;
+    margin-top: 25px;
+}
+.more1, .more2{
+    position: absolute;
+    top: -20px;
+    width: 30px;
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: .5s;
+}
+.more3{
+    transform: rotate(225deg);
+}
+.map1, .map2{
+    width: 90%;
+    height: 275px;
+    padding: 5px;
+    margin-bottom: 15px;
+    object-fit: fill;
+    border-radius: 5px;
+    border: 1px solid var(--color-green);
+    display: none;
+}
+.map3{
+    display: flex;
+}
+.map:last-child{
+    margin-bottom: 25px;
+}

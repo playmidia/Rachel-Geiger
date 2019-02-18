@@ -6,6 +6,15 @@
     --ptsans: "PT-Sans";
 }
 body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--ptsans);
+    z-index: -50;
+    background-image: url(../img/backgroundMobile.png);
+    background-size: 100vw 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +194,6 @@ body{
     transition: 1.5s;
     margin-top: 50px;
 }
-
 .number h3{
     margin: 0;
 }
@@ -219,6 +227,25 @@ body{
     position: relative;
     overflow: hidden;
 }
+.section-tree h2{
+    position: absolute;
+    top: 2%;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 2px;
+}
+.section-tree h2:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white; 
+}
 .contain-titles{
     display: flex;
     width: 100%;
@@ -228,25 +255,7 @@ body{
     opacity: 0;
     transform: translateY(100px);
     transition: 1.5s;
-}
-.contain-titles h2{
-    position: relative;
-    margin: 0;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 0;
-    padding-bottom: 5px;
-    font-size: 1.7rem;
-    color: white;
-    letter-spacing: 2px;
-}
-.contain-titles h2:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background-color: white; 
+    margin-top: 15%;
 }
 .perfil{
     height: 225px;
@@ -298,80 +307,169 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    text-align: center;
-    z-index: 21;
-    width: 100%;
+@media screen and (min-width: 525px){
+    .contain-sobre{
+        width: 75%;
+    }
+    .contain-sobre li{
+        font-size: 1.2rem;
+        margin-top: 25px; 
+        width: 80%;
+    }
 }
-.nav-social{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 15px 0;
+@media screen and (min-width: 600px){
+    .contain-sobre{
+        width: 75%;
+    }
+    .contain-sobre li{
+        font-size: 1.2rem;
+        margin-top: 25px; 
+        width: 80%;
+    }
 }
-.nav-social a{
-    width: 10%;
-    margin-left: 15px;
-    color: black;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media screen and (min-width: 760px){
+    .section-two{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: white;
+        background-image: none;
+    }
 }
-.nav-social a:last-child{
-    justify-content: space-between;
-    width: 42%;
+@media screen and (min-width: 900px){
+    body{
+        background-image: url(../img/background.png);
+        background-size: 140vw 100vh;
+    }
+    .section-one h1{
+        width: 85%;
+        border-bottom: 3px solid var(--color-green);
+        font-size: 35px;
+    }
+    .section-one .btn-fale-conosco{
+        height: 50px;
+        padding: 5px 20px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }.section-two{
+        height: 60vh;
+    }
+    .contain-numbers{
+        height: 85vh;
+        flex-direction: row;
+    }
+    .estatisticas{
+        font-size: 2.3rem;
+        top: 0;
+    }
+    .number{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 60%;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 1.5s;
+        margin-top: 0px;
+        position: relative;
+    }
+    .number h3{
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .number span{
+        font-size: 3rem;
+    }
+    .number span:before{
+        display: none;
+    }
+    .section-tree{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        background-color: var(--color-green);
+        background-position: center;
+        background-size: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .section-tree h2{
+        font-size: 2rem;    
+    }
+    .perfil{
+        height: 250px;
+        width: 200px;
+    }
+    .contain-titles h3{
+        margin: 0;
+        padding: 0;
+        border-bottom: 2px solid white;
+        font-size: 1.7rem;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+        color: white;
+    }
+    .contain-sobre{
+        width: 70%;
+    }
+    .contain-sobre li{
+        font-size: 1.2rem;
+        margin-top: 25px; 
+        width: 80%;
+    }
+    .contain-sobre a{
+        margin: 40px 0;
+        font-size: 1.2rem;
+    }
+    .animation-scroll{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-.nav-social img{
-    height: 38px;
+@media screen and (min-width: 1350px){
+    body{
+        background-image: url(../img/background.png);
+        background-size: cover;
+    }
+    .section-tree{
+        flex-direction: row;
+    }
+    .contain-titles{
+        position: inherit;
+        width: 35%;
+        margin: 0;
+    }
+    .perfil{
+        height: 325px;
+        width: 275px; 
+    }
+    .contain-sobre{
+        width: 65%;
+        margin-top: 75px;
+    }
+    .contain-sobre ul{
+        width: 75%;
+        height: 50%;
+    }
+    .contain-sobre li{
+        font-size: 1.2rem;
+        margin-top: 25px; 
+        width: 75%;
+        text-align: justify;
+    }
+    
 }
-.contact{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-.contact a{
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: .5px;
-    margin-top: 7.5px;
-}
-.contact>div{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80%;
-}
-.contact p{
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-}
-.copy{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
-.copy p{
-    width: 90%;
-    margin: 0;
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.5);
-}
-.copy a{
-    text-decoration: none;
-    color: var(--color-green);
-}
+
 
 

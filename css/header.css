@@ -14,18 +14,8 @@ html{
     font-family: "PT-Sans";
     src: url(../font/PT_Sans-Web-Regular.ttf);
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--ptsans);
-    z-index: -50;
-    background-image: url(../img/backgroundMobile.png);
-    background-size: 100vw 100vh;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-header{
+
+.header-static{
     position: absolute;
     top: 0;
     left: 0;
@@ -136,6 +126,51 @@ nav a{
 .scroll-top{
     height: 22px;
     transform: rotate(-90deg);
+}
+@media screen and (min-width: 1150px){
+    .header-static{
+        height: 60px;
+        justify-content: space-evenly;
+    }
+    .header-static>img{
+        margin-left: 0;
+        height: 50px;
+        z-index: 20;
+    }
+    nav{
+        position: static;
+        z-index: 1;
+        height: 100%;
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0;
+        opacity: 1;
+    }
+    nav ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav a{
+        margin: 0;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: .3s;
+        font-size: 18px;
+    }
+    .menu{
+        display: none;
+    }
 }
 
 

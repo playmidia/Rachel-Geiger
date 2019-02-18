@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dra. Rachel Geiger</title>
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/contato.css">
+        <link rel="stylesheet" href="css/footer2.css">
+        <script defer src="js/header.js"></script>
+        <script defer src="js/contato.js"></script>
+    </head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="inicio" class="header-static">
+            <img src="img/Logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Inicío</li></a>
+                    <a href="#sobre"><li>Sobre</li></a>
+                    <a href="contato.html"><li>Contato</li></a>
+                </ul>
+            </nav>
+            <div class="menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </header>
+        <section>
+            <h1>Fale Conosco</h1>
+            <form action="enviar.php" id="form" name="form" method="post">
+                <div class="campo">
+                    <input class="input" id="name" type="text" name="name" placeholder="Nome completo" required>
+                </div>
+                <div class="campo">
+                    <input class="input" id="email" type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="campo">
+                    <input class="input" id="phone" type="tel" name="phone" placeholder="Telefone" required>
+                </div>
+                <div class="campo">
+                    <input class="input" id="assunto" type="text" name="assunto" placeholder="Assunto" required>
+                </div>
+                <div class="campo">
+                    <textarea class="msg" id="mensagem" name="mensagem" placeholder="Digite sua Mensagem" required ></textarea>
+                </div>
+                    <button class="btn-active" disabled="true" >  Enviar</button>
+            </form>
+            <div class="map">
+                <p>R. Maestro Cardim, 377 - Bela Vista, São Paulo - SP, 04002-010</p>
+                <img class="more1" src="img/more.svg" alt="mais">
+                <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1026.2427431080878!2d-46.64162486031372!3d-23.564372987446692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a4a5f50851%3A0xc931c6556c4c6b38!2sCondom%C3%ADnio+Edif%C3%ADcio+Cardim+Center+-+R.+Maestro+Cardim%2C+377+-+Bela+Vista%2C+S%C3%A3o+Paulo+-+SP%2C+01323-000!5e0!3m2!1spt-BR!2sbr!4v1550506792395" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="map">
+                <p>R. Dr. Ivan de Souza Lopes, 94 - Centro, São José dos Campos - SP, 12210-270 </p>
+                <img class="more2" src="img/more.svg" alt="mais">
+                <iframe class="map2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d648.3386429471964!2d-45.883308987330764!3d-23.186355660019213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4a3dd1036941%3A0xd827f0c7c679e5d9!2sR.+Dr.+Ivan+de+Souza+Lopes%2C+94+-+Centro%2C+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP%2C+12210-270!5e0!3m2!1spt-BR!2sbr!4v1550507039210" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <footer>
+                <div class="nav-social">
+                      <a href="https://www.facebook.com/drarachelgeiger"><img src="img/facebook.png" alt="facebook"></a>
+                      <a href="https://www.instagram.com/drarachelgeiger/"><img src="img/instagram.png" alt="instagram"></a>
+                      <a href="https://api.whatsapp.com/send?phone=551296674100"><img src="img/whatsapp.png" alt="whatsapp"> Agende aqui </a>          
+                </div>
+                <div class="contact">
+                    <div>
+                        <p>(11) 3266-3962</p>|
+                        <p>(11) 3288-8480</p>
+                    </div>
+                    <a href="mailto:agendamento@drarachelgeiger.com.br">agendamento@drarachelgeiger.com.br</a>
+                </div>
+                <div class="copy">
+                    <p>Copyright © 2018 Dra. Rachel Geiger. Desenvolvido por <a href="https://www.playmidiapublicidade.com.br/">Grupo Play Mídia</a></p>
+                </div>
+            </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+:root{
+    --color-salmon: #E48872;
+    --color-green: #83B69B;
+    --color-bege: #FFFED8;
+    --montserrat: "MontSerrat";
+    --ptsans: "PT-Sans";
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 500px var(--color-green);
+    text-align: center;
+    z-index: 0;
+    width: 100%;
+    font-family: var(--montserrat);
+}
+.nav-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 15px 0;
+}
+.nav-social a{
+    width: 10%;
+    margin-left: 15px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-social a:last-child{
+    justify-content: space-between;
+    width: 42%;
+}
+.nav-social img{
+    height: 38px;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.contact a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    margin-top: 7.5px;
+}
+.contact>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.contact p{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.copy p{
+    width: 90%;
+    margin: 0;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.copy a{
+    text-decoration: none;
+    color: var(--color-green);
+}
+@media screen and (min-width: 450px) {
+    .nav-social{
+        margin: 20px 0;
+    }
+    .nav-social a{
+        font-size: 1.1rem;
+    }
+    .nav-social a:last-child{
+        justify-content: space-between;
+        width: 35%;
+    }
+    .contact a{
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .contact p{
+        font-size: 1.2rem;
+    }
+    .copy{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .copy p{
+        width: 80%;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 760px){
+    .nav-social{
+        width: 50%;
+        }
+        .nav-social a:last-child{
+            justify-content: space-between;
+            width: 42%;
+        }
+        .nav-social img{
+            height: 40px;
+        }
+        .contact{
+            width: 60%;
+        }
+        .contact a{
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        .contact>div{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 80%;
+        }
+        .contact p{
+            font-size: 1.2rem;
+        }
+        .copy p{
+            width: 80%;
+            font-size: 1.1rem;
+        }
+}
+@media screen and (min-width: 900px){
+    .nav-social{
+        width: 50%;
+    }
+    .nav-social a:last-child{
+        justify-content: space-between;
+        width: 35%;
+    }
+    .nav-social img{
+        height: 42px;
+    }
+    .contact{
+        width: 50%;
+    }
+    .contact a{
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 1080px){
+    footer{
+        flex-direction: row;
+    }
+    .nav-social{
+        width: 45%;
+    }
+    .nav-social a:last-child{
+        justify-content: space-between;
+        width: 40%;
+        font-size: 1.1rem;
+    }
+    .contact{
+        width: 40%;
+    }
+    .contact a{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1350px){
+    footer{
+        flex-direction: row;
+    }
+    .nav-social{
+        width: 40%;
+    }
+    .nav-social a:last-child{
+        justify-content: space-between;
+        width: 35%;
+    }
+    .contact{
+        width: 35%;
+    }
+}
+@media screen and (min-width: 1500px){
+    .nav-social{
+        width: 35%;
+    }
+    .nav-social a:last-child{
+        justify-content: space-between;
+        width: 30%;
+    }
+    .contact{
+        width: 30%;
+    }
+}
