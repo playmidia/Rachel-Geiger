@@ -230,7 +230,7 @@ body{
 }
 .section-tree h2{
     position: absolute;
-    top: 2%;
+    top: 1%;
     margin: 0;
     margin-bottom: 25px;
     padding: 0;
@@ -256,7 +256,7 @@ body{
     opacity: 0;
     transform: translateY(100px);
     transition: 1.5s;
-    margin-top: 15%;
+    margin-top: 20%;
 }
 .perfil{
     height: 225px;
