@@ -2,8 +2,8 @@
     --color-salmon: #E48872;
     --color-green: #83B69B;
     --color-bege: #FFFED8;
-    --montserrat: "MontSerrat";
-    --ptsans: "PT-Sans";
+    --montserrat: "MontSerrat", sans-serif;
+    --ptsans: "PT Sans", sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -11,9 +11,9 @@ html{
 }
 @font-face{
     font-family: "MontSerrat";
-    src: local("Montserrat-Regular") url("../font/Montserrat-Regular.ttf") format("ttf");
-    font-family: "PT-Sans";
-    src: local("PT-Sans-Web-Regular") url("../font/PT_Sans-Web-Regular.ttf") format("ttf");
+    src: local("Montserrat-Regular"), url("Montserrat-Regular.ttf") format("ttf");
+    font-family: "PT Sans";
+    src: local("PT-Sans-Web-Regular"), url("PT_Sans-Web-Regular.ttf") format("ttf");
 }
 .header-static{
     position: absolute;

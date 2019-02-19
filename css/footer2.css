@@ -2,8 +2,8 @@
     --color-salmon: #E48872;
     --color-green: #83B69B;
     --color-bege: #FFFED8;
-    --montserrat: "MontSerrat";
-    --ptsans: "PT-Sans";
+    --montserrat: "MontSerrat", sans-serif;
+    --ptsans: "PT Sans", sans-serif;
 }
 footer{
     display: flex;

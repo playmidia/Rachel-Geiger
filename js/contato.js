@@ -32,16 +32,14 @@ more2.onclick = () => {
     map2.classList.toggle('map3')
     more2.classList.toggle('more3');
 }
-button.onclick = (event) => {
-    button.innerHTML = "ENVIADO!";
+button.onclick = () => {
     enviar();
-    event.preventDefault();
 }
 
-function enviar(e) {
+function enviar() {
     if(name.value.trim() != "" && email.value.trim() != "" && email.value.indexOf('@') != -1 && phone.value.trim() != "" && assunto.value.trim() != "" && mensagem.value.trim() != ""){
-        e.preventDefault();
         form.submit();
+        button.innerHTML = "ENVIADO!";
     // window.location.replace('enviar.php');
     // return true;
     }
