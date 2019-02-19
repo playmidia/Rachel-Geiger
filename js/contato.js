@@ -20,12 +20,6 @@ function verificar() {
         button.disabled = true;
         button.classList.add('btn-disable');
     }
-    if(mensagem.value.trim() != ""){
-        mensagem.style.height = "150px";
-    }
-    else{
-        mensagem.style.height = "45px";
-    }
 }
 
 setInterval(verificar, 100);
@@ -38,17 +32,18 @@ more2.onclick = () => {
     map2.classList.toggle('map3')
     more2.classList.toggle('more3');
 }
-button.onclick = () => {
+button.onclick = (event) => {
+    button.innerHTML = "ENVIADO!";
     enviar();
     event.preventDefault();
-    button.innerHTML = "ENVIADO!";
 }
 
-function enviar() {
+function enviar(e) {
     if(name.value.trim() != "" && email.value.trim() != "" && email.value.indexOf('@') != -1 && phone.value.trim() != "" && assunto.value.trim() != "" && mensagem.value.trim() != ""){
-    event.preventDefault();
-    form.submit();
-    return true;
+        e.preventDefault();
+        form.submit();
+    // window.location.replace('enviar.php');
+    // return true;
     }
     else{
         console.log('erro');

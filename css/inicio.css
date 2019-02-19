@@ -8,7 +8,6 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: var(--ptsans);
     z-index: -50;
     background-image: url(../img/backgroundMobile.png);
     background-size: 100vw 100vh;
@@ -150,6 +149,7 @@ body{
     background-image: url(../img/sectionTwo.svg);
     background-position: top;
     background-size: cover;
+    font-family: var(--ptsans);
 }
 .contain-numbers{
     position: relative;
@@ -226,6 +226,7 @@ body{
     background-size: 100vh;
     position: relative;
     overflow: hidden;
+    font-family: var(--ptsans);
 }
 .section-tree h2{
     position: absolute;
@@ -422,6 +423,7 @@ body{
     }
     .contain-sobre{
         width: 70%;
+        margin-right: 10%;
     }
     .contain-sobre li{
         font-size: 1.2rem;
@@ -449,6 +451,7 @@ body{
         position: inherit;
         width: 35%;
         margin: 0;
+        margin-left: 10%;
     }
     .perfil{
         height: 325px;
