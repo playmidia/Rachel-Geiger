@@ -11,11 +11,10 @@ html{
 }
 @font-face{
     font-family: "MontSerrat";
-    src: url(../font/Montserrat-Regular.ttf);
+    src: local("Montserrat-Regular") url("../font/Montserrat-Regular.ttf") format("ttf");
     font-family: "PT-Sans";
-    src: url(../font/PT_Sans-Web-Regular.ttf);
+    src: local("PT-Sans-Web-Regular") url("../font/PT_Sans-Web-Regular.ttf") format("ttf");
 }
-
 .header-static{
     position: absolute;
     top: 0;
